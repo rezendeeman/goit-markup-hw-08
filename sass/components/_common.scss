@@ -29,9 +29,24 @@ p {
 }
 
 .container {
-    padding: 0 15px;
-    width: 1200px;
-    margin: auto;
+
+    width: 100%;
+
+
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        padding: 0 15px;
+        margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .section {
