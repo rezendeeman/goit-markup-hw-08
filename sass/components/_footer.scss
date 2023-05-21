@@ -1,0 +1,149 @@
+footer {
+    background-color: var(--footer-background-color);
+    padding: 60px 0;
+
+    address {
+        margin-top: 28px;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.address-info {
+    width: 231px;
+    margin-right: 70px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+
+    &__item:nth-of-type(-n+2) {
+        margin-bottom: 12px;
+    }
+
+    &__link{
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+        letter-spacing: 0.03em;
+        color: var(--footer-contacts-color);
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+        &:hover,
+        &:focus {
+            color: var(--footer-contacts-active-color);
+        }
+    }
+
+    &__mail-contact{
+        color: var(--footer-contacts-active-color);
+    }
+}
+
+.social-info {
+    width: 206px;
+
+    .follow-us {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--footer-social-color);
+    }
+
+    &__links {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &__icons {
+        fill: var(--social-icons-color-active);
+    }
+
+    & .social-icons-links-list{
+    margin-top: 20px;
+}
+}
+
+
+
+.follow {
+    margin-left: 93px;
+    width: 570px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+    }
+
+    &__form {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &__email {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        width: 358px;
+        height: 50px;
+        padding-left: 16px;
+        outline: none;
+        color: #FFFFFF;
+
+        &::placeholder {
+                font-size: 16px;
+                line-height: 1.25;
+        
+                letter-spacing: 0.03em;
+        
+                color: rgba(255, 255, 255, 0.6);
+            }
+    }
+
+
+    &__form {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &__button {
+        width: 200px;
+        height: 50px;
+
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12px;
+    }
+
+    &__button-icon {
+        margin-left: 10px;
+        fill: #FFFFFF;
+        width: 24px;
+        height: 24px;
+    }
+}

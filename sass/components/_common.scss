@@ -1,0 +1,40 @@
+body {
+    font-family: var(--roboto-font);
+    color: var(--general-color);
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 15px;
+    width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
