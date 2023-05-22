@@ -1,13 +1,14 @@
-header {
+header{
     border-bottom: 1px solid #ECECEC;
-    position: relative;
+    padding: 10px 0;
 }
 
 .header{
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    width: 100%;
 
 
     &__menu-button{
@@ -33,10 +34,9 @@ header {
 
     &__link {
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 40px;
+        line-height: 1.18;
         letter-spacing: 0.02em;
-        padding: 32px 0;
         display: block;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
@@ -66,14 +66,14 @@ header {
 
 .mobile-menu{
 
+    padding: 48px 40px;
     position: absolute;
     left: 0;
-    right: 0;
+    top: 0;
     width: 100vw;
     height: 100vh;
     overflow: scroll;
-
-    background-color: #fd1;
+    background-color: #fff;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -91,6 +91,10 @@ header {
         background-color: transparent;
         border: none;
         cursor: pointer;
+
+        position: absolute;
+        top: 10px;
+        right: 15px;
         
 
             &:hover .mobile-menu__close-icon,
@@ -100,14 +104,15 @@ header {
     }
 
     &__close-icon {
-            fill: #000000;
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-            .modal-window__close-modal:focus &,
-            .modal-window__close-modal:hover & {
-                fill: #2196F3;
-            }
+        width: 40px;
+        height: 40px;
+        fill: #000000;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .modal-window__close-modal:focus &,
+        .modal-window__close-modal:hover & {
+            fill: #2196F3;
         }
+    }
 
     .navigation {
         display: flex;
@@ -117,10 +122,13 @@ header {
     .nav-list {
         display: flex;
         column-gap: 50px;
-        align-items: center;
+        gap: 32px;
+
+        flex-direction: column;
 
         &__link {
             color: var(--title-color);
+
         }
     }
 
@@ -128,38 +136,76 @@ header {
     .chosen {
         color: var(--active-link-color);
         position: relative;
-
-        &::after {
-            content: "";
-
-            position: absolute;
-            bottom: 0;
-            display: block;
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            background-color: #2196F3;
-            margin-bottom: -1px;
-
-        }
     }
 
     .header-contacts-list {
+        margin-top: 306px;
         display: flex;
-        align-items: center;
-        column-gap: 40px;
+        gap: 32px;
+        flex-direction: column;
 
-        &__link {
+        &__tel-link {
             color: var(--header-contacts-color);
             fill: var(--header-contacts-color);
 
             display: flex;
             align-items: center;
+            font-weight: 500;
+                font-size: 34px;
+                line-height: 1.18;
+                /* identical to box height */
+            
+                letter-spacing: 0.02em;
+            
+                color: #2196F3;
+        }
+        
+        &__email-link {
+            color: var(--header-contacts-color);
+            fill: var(--header-contacts-color);
+
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+                font-size: 24px;
+                line-height: 1.17;
+                letter-spacing: 0.02em;
+            
+                color: #757575;
         }
 
         &__icons {
             margin-right: 10px;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        }
+    }
+
+
+    .header-social-links{
+        margin-top: 64px;
+        display: flex;
+
+        &__items{
+            display: flex;
+        }
+        
+        &__items:not(:last-of-type)::after{
+            content:'';
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 1px;
+            height: 22px;
+            display: block;
+            background-color: #212121;
+        }
+
+        &__links{
+            
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            color: #2196F3;
         }
     }
 }
@@ -243,6 +289,7 @@ header {
 
             display: flex;
             align-items: center;
+
         }
 
         &__icons {
