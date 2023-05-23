@@ -1,11 +1,16 @@
+// =========================================
+// 0-767px
 .clients-cards-list {
     display: flex;
     justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 
     &__links {
             border: 1px solid #AFB1B8;
             border-radius: 4px;
-            width: 170px;
+            width: 210px;
             height: 92px;
             display: flex;
             justify-content: center;
@@ -33,5 +38,35 @@
     &__links:hover>&__svg,
     &__links:focus>&__svg {
         fill: var(--active-link-color);
+    }
+}
+
+
+
+
+
+
+// =========================================
+// +768px
+@media screen and (min-width: 768px) {
+    .clients-cards-list {
+            &__links {
+                width: 226px;
+            }
+    }
+}
+
+
+
+
+
+
+// =========================================
+// +1200px
+@media screen and (min-width: 1200px) {
+    .clients-cards-list {
+        &__links {
+            width: 170px;
+        }
     }
 }

@@ -1,3 +1,5 @@
+// =========================================
+// 0-767px
 footer {
     background-color: var(--footer-background-color);
     padding: 60px 0;
@@ -9,12 +11,14 @@ footer {
 
 .footer {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
 }
 
 .address-info {
-    width: 231px;
-    margin-right: 70px;
+    text-align: center ;
+    margin: auto;
+    margin-bottom: 60px ;
 }
 
 .contacts-list {
@@ -46,7 +50,9 @@ footer {
 }
 
 .social-info {
+    text-align: center;
     width: 206px;
+    margin-bottom: 60px;
 
     .follow-us {
         font-weight: 700;
@@ -73,9 +79,8 @@ footer {
 
 
 .follow {
-    margin-left: 93px;
-    width: 570px;
-
+    text-align: center;
+    width: 100%;
     &__title {
         font-weight: 700;
         font-size: 14px;
@@ -89,7 +94,10 @@ footer {
 
     &__form {
         display: flex;
+        width: 100%;
         margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__email {
@@ -97,11 +105,12 @@ footer {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: transparent;
-        width: 358px;
+        width: 450px;
         height: 50px;
         padding-left: 16px;
         outline: none;
         color: #FFFFFF;
+        margin-bottom: 20px;
 
         &::placeholder {
                 font-size: 16px;
@@ -113,11 +122,7 @@ footer {
             }
     }
 
-
-    &__form {
-        display: flex;
-        margin-top: 20px;
-    }
+    
 
     &__button {
         width: 200px;
@@ -146,4 +151,73 @@ footer {
         width: 24px;
         height: 24px;
     }
+}
+
+
+
+
+
+
+// =========================================
+// +768px
+
+@media screen and (min-width:768px) {
+    .footer {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    
+    .address-info {
+        margin: 0;
+        margin-bottom: 60px ;
+    }
+}
+
+
+
+
+
+
+// =========================================
+// +1200px
+@media screen and (min-width:1200px) {
+
+
+        .footer {
+            align-items: baseline;
+            flex-direction: row;
+        }
+
+
+        .address-info {
+            text-align: left;
+            width: 231px;
+            margin-right: 70px;
+        }
+    
+        .social-info {
+            width: 206px;
+            text-align: left;
+        }
+    
+    
+    
+        .follow {
+            text-align: left;
+            margin-left: 93px;
+            width: 570px;
+
+            &__email {
+                width: 358px;
+                margin: 0;
+            }
+
+            &__form{
+                flex-wrap: nowrap;
+                flex-direction: row;
+                align-items: center;
+            }
+
+        }
 }

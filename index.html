@@ -110,18 +110,18 @@
         <!-- MAIN -->
         <main>
             <!-- HERO -->
-            <!-- <section class="hero section">
-                <div class="container">
+            <section class="hero section">
+                <div class="container hero__container">
                     <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                     <button class="hero__form-button" type="button" data-modal-open>Замовити послугу</button>
                 </div>
-            </section> -->
+            </section>
             <!-- HERO -->
 
 
 
             <!-- FEATURES -->
-            <!-- <section class="features section">
+            <section class="features section">
                 <div class="container">
                     <ul class="features-list list">
                         <li class="features-list__item">
@@ -163,18 +163,26 @@
                     </ul>
                 </div>
                 
-            </section> -->
+            </section>
             <!-- FEATURES -->
 
 
 
             <!-- WHAT WE DO -->
-            <!-- <section class="what-we-do section">
+            <section class="what-we-do section">
                 <div class="container">
                     <h2 class="title">Чим ми займаємося</h2>
                     <ul class="what-we-do-list list">
                         <li class="what-we-do-list__item">
-                            <img class="image" src="images/about-img-1.jpg" alt="людина за комп'ютером" width="370" height="294">
+                            <picture>
+                                <source srcset="images/index/about/about-img-1@1x.webp 1x, images/index/about/about-img-1@2x.webp 2x"
+                                    type="image/webp">
+                                <source srcset="images/index/about/about-img-1@1x.jpg 1x, images/index/about/about-img-1@2x.jpg 2x"
+                                    type="image/jpg">
+                                <img class="image" src="images/index/about/about-img-1@1x.jpg" alt="Десктопні додатки">
+                            </picture>
+
+
                             <div class="what-we-do-list__wrapper">
                                 <p class="what-we-do-list__text">
                                     Десктопні додатки
@@ -183,7 +191,12 @@
                             
                         </li>
                         <li class="what-we-do-list__item">
-                            <img class="image" src="images/about-img-2.jpg" alt="людина за комп'ютером" width="370" height="294">
+                            <picture>
+                                <source srcset="images/index/about/about-img-2@1x.webp 1x, images/index/about/about-img-2@2x.webp 2x" type="image/webp">
+                                <source srcset="images/index/about/about-img-2@1x.jpg 1x, images/index/about/about-img-2@2x.jpg 2x" type="image/jpg">
+                                <img class="image" src="images/index/about/about-img-2@1x.jpg" alt="Мобільні додатки">
+                            </picture>
+
                             <div class="what-we-do-list__wrapper">
                                 <p class="what-we-do-list__text">
                                     Мобільні додатки
@@ -192,7 +205,15 @@
                             
                         </li>
                         <li class="what-we-do-list__item">
-                            <img class="image" src="images/about-img-3.jpg" alt="людина за комп'ютером" width="370" height="294">
+                            <picture>
+                                <source srcset="images/index/about/about-img-3@1x.webp 1x, images/index/about/about-img-3@2x.webp 2x"
+                                    type="image/webp">
+                                <source srcset="images/index/about/about-img-3@1x.jpg 1x, images/index/about/about-img-3@2x.jpg 2x"
+                                    type="image/jpg" width="370" height="294">
+                                <img class="image" src="images/index/about/about-img-3@1x.jpg" alt="Дизайнерські рішення">
+                            </picture>
+
+
                             <div class="what-we-do-list__wrapper">
                                 <p class="what-we-do-list__text">
                                     Дизайнерські рішення
@@ -203,17 +224,273 @@
                     </ul>
                 </div>
                 
-            </section> -->
+            </section>
             <!-- WHAT WE DO -->
 
 
 
             <!-- OUR TEAM -->
-            <!--OUR TEAM -->
+            <section class="our-team section">
+                <div class="container">
+                    <h2 class="title">Наша команда</h2>
+                    <ul class="our-team-list list">
+                        <li class="our-team-list__item">
+                            
+                            <picture>
+                                <source srcset="images/index/team/team-mobile-1@1x.webp 1x, images/index/team/team-mobile-1@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" width="450px">
+                                <source srcset="images/index/team/team-mobile-1@1x.jpg 1x, images/index/team/team-mobile-1@2x.jpg 2x"
+                                    media="(max-width: 767px)" type="image/jpg" width="450px">
+
+                                <source srcset="images/index/team/team-tablet-1@1x.webp 1x, images/index/team/team-tablet-1@2x.webp 2x"
+                                    media="(max-width: 1199px)" type="image/webp" width="354px">
+                                <source srcset="images/index/team/team-tablet-1@1x.jpg 1x, images/index/team/team-tablet-1@2x.jpg 2x"
+                                    media="(max-width: 1199px)" type="image/jpg" width="354px">
+
+                                <source srcset="images/index/team/team-dekstop-1@1x.webp 1x, images/index/team/team-dekstop-1@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" width="270px">
+                                <source srcset="images/index/team/team-dekstop-1@1x.jpg 1x, images/index/team/team-dekstop-1@2x.jpg 2x"
+                                    media="(min-width: 1200px)" type="image/jpg" width="270px">
+
+                                <img class="image" src="images/index/team/team-mobile-1@1x.jpg" alt="Ігор Дем'яненко" width="450px">
+                            </picture>
+
+
+
+                            <div class="wrapper">
+                                <h3 class="our-team-list__title our-team-list__text">
+                                    Ігор Дем'яненко
+                                </h3>
+                                <p class="our-team-list__description our-team-list__text" lang="en">
+                                    Product Designer
+                                </p>
+                                <ul class="social-icons-links-list list">
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons ">
+                                                <use href="images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="our-team-list__item">
+
+
+
+                            <picture>
+                                <source srcset="images/index/team/team-mobile-2@1x.webp 1x, images/index/team/team-mobile-2@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" width="450px">
+                                <source srcset="images/index/team/team-mobile-2@1x.jpg 1x, images/index/team/team-mobile-2@2x.jpg 2x"
+                                    media="(max-width: 767px)" type="image/jpg" width="450px">
+                            
+                                <source srcset="images/index/team/team-tablet-2@1x.webp 1x, images/index/team/team-tablet-2@2x.webp 2x"
+                                    media="(max-width: 1199px)" type="image/webp" width="354px">
+                                <source srcset="images/index/team/team-tablet-2@1x.jpg 1x, images/index/team/team-tablet-2@2x.jpg 2x"
+                                    media="(max-width: 1199px)" type="image/jpg" width="354px">
+                            
+                                <source srcset="images/index/team/team-dekstop-2@1x.webp 1x, images/index/team/team-dekstop-2@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" width="270px">
+                                <source srcset="images/index/team/team-dekstop-2@1x.jpg 1x, images/index/team/team-dekstop-2@2x.jpg 2x"
+                                    media="(min-width: 1200px)" type="image/jpg" width="270px">
+                            
+                                <img class="image" src="images/index/team/team-mobile-2@1x.jpg" alt="Ольга Рєпіна" width="450px">
+                            </picture>
+
+
+
+                            <div class="wrapper">
+                                <h3 class="our-team-list__title our-team-list__text">
+                                    Ольга Рєпіна
+                                </h3>
+                                <p class="our-team-list__description our-team-list__text" lang="en">
+                                    Frontend Developer
+                                </p>
+                                <ul class="social-icons-links-list list">
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons ">
+                                                <use href="images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="our-team-list__item">                        
+                            <picture>
+                                <source srcset="images/index/team/team-mobile-3@1x.webp 1x, images/index/team/team-mobile-3@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" width="450px">
+                                <source srcset="images/index/team/team-mobile-3@1x.jpg 1x, images/index/team/team-mobile-3@2x.jpg 2x"
+                                    media="(max-width: 767px)" type="image/jpg" width="450px">
+
+                                <source srcset="images/index/team/team-tablet-3@1x.webp 1x, images/index/team/team-tablet-3@2x.webp 2x"
+                                    media="(max-width: 1199px)" type="image/webp" width="354px">
+                                <source srcset="images/index/team/team-tablet-3@1x.jpg 1x, images/index/team/team-tablet-3@2x.jpg 2x"
+                                    media="(max-width: 1199px)" type="image/jpg" width="354px">
+
+                                <source srcset="images/index/team/team-dekstop-3@1x.webp 1x, images/index/team/team-dekstop-3@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" width="270px">
+                                <source srcset="images/index/team/team-dekstop-3@1x.jpg 1x, images/index/team/team-dekstop-3@2x.jpg 2x"
+                                    media="(min-width: 1200px)" type="image/jpg" width="270px">
+
+                                <img class="image" src="images/index/team/team-mobile-3@1x.jpg" alt="Ігор Дем'яненко" width="450px">
+                            </picture>
+
+
+                            <div class="wrapper">
+                                <h3 class="our-team-list__title our-team-list__text">
+                                    Микола Тарасов
+                                </h3>
+                                <p class="our-team-list__description our-team-list__text" lang="en">
+                                    Marketing
+                                </p>
+                                <ul class="social-icons-links-list list">
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons ">
+                                                <use href="images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="our-team-list__item">
+
+                            <picture>
+                                <source srcset="images/index/team/team-mobile-4@1x.webp 1x, images/index/team/team-mobile-4@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" width="450px">
+                                <source srcset="images/index/team/team-mobile-4@1x.jpg 1x, images/index/team/team-mobile-4@2x.jpg 2x"
+                                    media="(max-width: 767px)" type="image/jpg" width="450px">
+
+                                <source srcset="images/index/team/team-tablet-4@1x.webp 1x, images/index/team/team-tablet-4@2x.webp 2x"
+                                    media="(max-width: 1199px)" type="image/webp" width="354px">
+                                <source srcset="images/index/team/team-tablet-4@1x.jpg 1x, images/index/team/team-tablet-4@2x.jpg 2x"
+                                    media="(max-width: 1199px)" type="image/jpg" width="354px">
+
+                                <source srcset="images/index/team/team-dekstop-4@1x.webp 1x, images/index/team/team-dekstop-4@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" width="270px">
+                                <source srcset="images/index/team/team-dekstop-4@1x.jpg 1x, images/index/team/team-dekstop-4@2x.jpg 2x"
+                                    media="(min-width: 1200px)" type="image/jpg" width="270px">
+
+                                <img class="image" src="images/index/team/team-mobile-4@1x.jpg" alt="Ігор Дем'яненко" width="450px">
+                            </picture>
+
+
+
+                            <div class="wrapper">
+                                <h3 class="our-team-list__title our-team-list__text">
+                                    Михайло Єрмаков
+                                </h3>
+                                <p class="our-team-list__description our-team-list__text" lang="en">
+                                    UI Designer
+                                </p>
+                                <ul class="social-icons-links-list list">
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons ">
+                                                <use href="images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links links" href="" target="_blank" rel="noopener noreferrer">
+                                            <svg class="social-icons">
+                                                <use href="images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+            </section>
+            <!-- OUR TEAM -->
 
 
             <!-- OUR CLIENTS -->
-            <!-- <section class="clients section">
+            <section class="clients section">
                 <div class="container">
                     <h2 class="title">Постійні клієнти</h2>
                     <ul class="clients-cards-list list">
@@ -263,7 +540,7 @@
                     </ul>
                 </div>
                 
-            </section> -->
+            </section>
             <!-- OUR CLIENTS -->
         </main>
         <!-- MAIN -->
@@ -271,7 +548,7 @@
 
 
         <!-- FOOTER -->
-        <!-- <footer>
+        <footer>
             <div class="container footer">
                 <div class="address-info">
                     <a class="logo footer__logo link" href="" lang="en"><span class="logo__web">Web</span>Studio</a>
@@ -340,7 +617,7 @@
                 </div>
             </div>
             
-        </footer> -->
+        </footer>
         <!-- FOOTER -->
 
 

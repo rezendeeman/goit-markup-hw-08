@@ -1,11 +1,15 @@
+// =========================================
+// 0-767px
 .our-team {
     background-color: var(--our-team-section-background-color);
 }
 
 .our-team-list {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 
+    
     &__item {
         background-color: var(--our-team-cards-background-color);
 
@@ -17,7 +21,7 @@
         flex-basis: calc((100% - 90px)/4);
 
         .wrapper {
-            padding: 30px 30px;
+            padding: 24px 122px;
         }
     }
 
@@ -37,3 +41,35 @@
     }
 }
 
+
+
+
+
+// =========================================
+// +768px
+@media screen and (min-width: 768px) {
+
+    .our-team-list {
+        &__item {
+            .wrapper {
+                padding: 24px 74px;
+            }
+        }
+    }
+}
+
+
+
+
+// =========================================
+// +1200px
+@media screen and (min-width: 1200px) {
+
+    .our-team-list {
+        &__item {
+            .wrapper {
+                padding: 30px 32px;
+            }
+        }
+    }
+}
