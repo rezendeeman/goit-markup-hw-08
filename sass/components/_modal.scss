@@ -23,8 +23,7 @@
 
 .modal-window {
     position: absolute;
-    width: 528px;
-    height: 582px;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -199,7 +198,7 @@
 
     &__checkbox:checked+&__lable::before {
         background: url(../images/check.svg);
-        background-size: 100%;
+        background-size: 100% 100%;
         border: 0;
     }
 
@@ -234,3 +233,19 @@
 
 }
 
+
+
+
+@media screen and (min-width:480px) {
+    .modal-window {
+        width: 450px;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    .modal-window {
+        width: 528px;
+    }
+
+}

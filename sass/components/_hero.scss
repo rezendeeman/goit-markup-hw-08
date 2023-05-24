@@ -3,7 +3,7 @@
 .hero {
 
     &__container{
-        width: 360px;
+        width: 100%;
         margin: auto;
     }
 
@@ -64,6 +64,14 @@
 
 
 
+@media screen and (min-width:480px) {
+    .hero {
+
+        &__container{
+            width: 360px;
+        }
+    }
+}
 
 
 

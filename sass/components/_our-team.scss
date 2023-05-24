@@ -7,9 +7,17 @@
 .our-team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 
-    
+    &__photo{
+        width: 50%;
+        @media screen and (max-width:479px) {
+            width: 100%;
+        }
+    }
+
+
     &__item {
         background-color: var(--our-team-cards-background-color);
 
@@ -21,7 +29,10 @@
         flex-basis: calc((100% - 90px)/4);
 
         .wrapper {
-            padding: 24px 122px;
+            padding: 24px 40px;
+            @media screen and (min-width:480px) {
+                padding: 24px 122px;
+            }
         }
     }
 
