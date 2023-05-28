@@ -45,10 +45,9 @@ header{
 
 
 .mobile-menu{
-
     z-index: 10;
     padding: 48px 40px;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
@@ -56,6 +55,9 @@ header{
     overflow: scroll;
     background-color: #fff;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     visibility: hidden;
     pointer-events: none;
     
@@ -63,7 +65,7 @@ header{
 
         &__link {
             font-weight: 500;
-            font-size: 40px;
+            font-size: 20px;
             line-height: 1.18;
             letter-spacing: 0.02em;
             display: block;
@@ -144,7 +146,6 @@ header{
     }
 
     .header-contacts-list {
-        margin-top: 306px;
         display: flex;
         gap: 32px;
         flex-direction: column;
@@ -156,7 +157,7 @@ header{
             display: flex;
             align-items: center;
             font-weight: 500;
-                font-size: 34px;
+                font-size: 20px;
                 line-height: 1.18;
                 /* identical to box height */
             
@@ -172,7 +173,7 @@ header{
             display: flex;
             align-items: center;
             font-weight: 500;
-                font-size: 24px;
+                font-size: 16px;
                 line-height: 1.17;
                 letter-spacing: 0.02em;
             
@@ -207,18 +208,68 @@ header{
         &__links{
             
             font-weight: 500;
-            font-size: 18px;
-            line-height: 1.22;
+            font-size: 8px;
+            line-height: 2.2;
             letter-spacing: 0.02em;
             color: #2196F3;
         }
     }
 }
 
+@media screen and (min-width: 375px) {
+    .mobile-menu{
+        .header {
+            &__link {
+                font-size: 30px;
+            }
+        }
+
+        .header-contacts-list {
+            &__tel-link {
+                font-size: 30px;
+            }
+
+            &__email-link {
+                font-size: 20px;
+            }
+        }
+
+        .header-social-links {
+            &__links {
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
 
 
+@media screen and (min-width:480px) {
+    .mobile-menu{
+        .header {
+            &__link {
+                font-size: 40px;
+            }
+        }
 
+        .header-contacts-list {
+            &__tel-link {
+                font-size: 34px;
+            }
 
+            &__email-link {
+                font-size: 24px;
+            }
+        }
+
+        .header-social-links {
+            &__links {
+                font-size: 18px;
+                line-height: 1.22;
+            }
+        }
+    }
+}
 
 
 

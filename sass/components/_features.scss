@@ -65,8 +65,9 @@
     .features {
         &__title {
             text-align: left;
+        }
+        
     }
-}
 }
 
 
@@ -82,5 +83,8 @@
         &__item {
             flex-basis: calc((100% - 90px)/4);
         }
+    }
+    .features{
+        margin-bottom: 24px;
     }
 }
