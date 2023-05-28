@@ -594,15 +594,18 @@ footer address {
     text-align: left;
     width: 231px;
     margin-right: 70px;
+    margin-bottom: 0;
   }
   .social-info {
     width: 206px;
     text-align: left;
+    margin-bottom: 0;
   }
   .follow {
     text-align: left;
     margin-left: 93px;
     width: 570px;
+    margin-bottom: 0;
   }
   .follow__email {
     width: 358px;
@@ -1202,7 +1205,6 @@ footer address {
   margin-bottom: 30px;
 }
 .project-list__title-wrapper {
-  background-color: aqua;
   flex-grow: 1;
 }
 .project-list__link {
