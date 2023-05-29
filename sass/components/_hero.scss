@@ -106,6 +106,14 @@
             padding-top: 200px;
             padding-bottom: 200px;
             max-width: 1600px;
+            &__container {
+                width: 696px;
+            }
+
+            &__title {
+            font-size: 44px;
+            line-height: 1.36;
+            }
         }
     
         @media (min-device-pixel-ratio: 2),

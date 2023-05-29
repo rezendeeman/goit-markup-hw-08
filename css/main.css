@@ -698,6 +698,13 @@ footer address {
     padding-bottom: 200px;
     max-width: 1600px;
   }
+  .hero__container {
+    width: 696px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
@@ -1020,7 +1027,7 @@ footer address {
     flex-basis: calc((100% - 90px) / 4);
   }
   .features {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 }
 .what-we-do {
